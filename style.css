@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+html {
+    font-size: 16px;
+}
+
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.heading {
+    padding: .1rem;
+    text-align: center;
+}
+
+.heading h2 {
+    font-family: 'Allura', cursive;
+    color: #ffe500;
+    font-size: 4.7rem;
+}
+
+.container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.button-option {
+    background: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border-radius: 8px;
+    /* border: .2rem solid #ffc3c3; */
+    border: none;
+    font-size: 12vmin;
+    color: #d161ff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#restart {
+    font-size: 1.6rem;
+    padding: .8rem 1.6rem;
+    border-radius: 10px;
+    background-color: #ffc92a;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.1em auto 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* after match page */
+.popup {
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+}
+
+#new-game {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #ffc92a;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: none;
+    cursor: pointer;
+}
+
+#message {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+}
+
+.popup.hide {
+    display: none;
+}
+
+/* media queries */
+@media (max-width:530px) {
+    .heading h2 {
+        font-size: 3.7rem;
+    }
+
+    #restart {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width:417px) {
+    .heading h2 {
+        font-size: 3rem;
+    }
+
+    #restart {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+
+}
